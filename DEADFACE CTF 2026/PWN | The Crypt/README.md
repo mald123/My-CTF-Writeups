@@ -153,9 +153,9 @@ Breakpoint 1, 0x000000000040181b in main ()
 
 Наш payload має складатись з: ***offset (64 + 8 bytes) -> nowhere address***
 
-Отримуємо прапор:
+Запускаємо експлойт і отримуємо прапор:
 ```sh
-$ python payload.py
+$ python exploit.py
 [+] Opening connection to 159.65.228.107 on port 5001: Done
 [*] Switching to interactive mode
 deadface{d3crypt3d_1nt0_n0th1ng}
