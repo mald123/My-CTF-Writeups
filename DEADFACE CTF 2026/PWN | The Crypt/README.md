@@ -2,7 +2,9 @@
 
 **Прапор:** `deadface{d3crypt3d_1nt0_n0th1ng}`
 
-**Файли завдання:** архів з бінарником
+**Файли завдання:** архів з бінарником *(513 МБ)*
+
+**Посилання на завантаженян архіву:** [The_Crypt.zip](https://deadface.sfo3.cdn.digitaloceanspaces.com/2026/challenges/pwn/The_Crypt.zip)
 
 ---
 
